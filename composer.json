@@ -1,0 +1,32 @@
+{
+    "name": "gumphp/think-crontab",
+    "description": "workerman/crontab for thinkphp",
+    "type": "library",
+    "require": {
+        "topthink/framework": "^v6.1",
+        "workerman/crontab": "^v1.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "gumphp\\crontab\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "gumphp",
+            "email": "gumphp@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "extra": {
+        "think": {
+            "services": [
+                "\\gumphp\\crontab\\CrontabService"
+            ],
+            "config": {
+                "crontab": "config/crontab.php"
+            }
+        }
+    }
+}
